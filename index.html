@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Cadastro de Planetas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Planetas do Sistema Solar</h1>
+        <form id="planetForm">
+            <label for="nome">Nome do Planeta:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="rotacao">Rotação (horas):</label>
+            <input type="number" id="rotacao" name="rotacao" required>
+
+            <label for="translacao">Translação (dias):</label>
+            <input type="number" id="translacao" name="translacao" required>
+
+            <label for="diametro">Diâmetro (km):</label>
+            <input type="text" id="diametro" name="diametro" required>
+
+            <label for="temperatura">Temperatura Média (°C):</label>
+            <input type="text" id="temperatura" name="temperatura" required>
+
+            <label for="distancia">Distância ao Sol (milhões de km):</label>
+            <input type="text" id="distancia" name="distancia" required>
+
+            <label for="imagem">Link da Imagem:</label>
+            <input type="url" id="imagem" name="imagem" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <a href="data.html" class="link">Ver Planetas Cadastrados</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
