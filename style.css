@@ -1,69 +1,70 @@
-/* styles.css */
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5; /* Cor de fundo mais clara e suave */
+    background-color: #e9ecef; /* Fundo mais suave */
     margin: 0;
     padding: 0;
+    color: #343a40;
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1100px;
     margin: 50px auto;
-    background: #ffffff;
-    padding: 40px; /* Aumentado o padding */
-    border-radius: 16px; /* Cantos mais arredondados */
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px; /* Bordas arredondadas elegantes */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
 }
 
 h1 {
     text-align: center;
-    color: #343a40; /* Cor do texto mais escura */
-    font-size: 2.5em; /* Tamanho maior para destaque */
-    margin-bottom: 30px; /* Espaço abaixo do título */
+    color: #212529; /* Texto mais escuro e contrastante */
+    font-size: 2.8em; /* Título mais destacado */
+    margin-bottom: 30px;
+    letter-spacing: 1px; /* Espaçamento entre letras para sofisticação */
 }
 
 form label {
     display: block;
     margin-top: 20px;
-    color: #495057; /* Cor do texto um pouco mais suave */
+    color: #495057;
     font-weight: bold;
-    font-size: 1.2em; /* Tamanho de fonte maior */
+    font-size: 1.3em; /* Destaque no texto dos rótulos */
 }
 
-form input {
+form input, #searchBar {
     width: 100%;
-    padding: 14px; /* Aumentado o padding */
+    padding: 14px;
     margin-top: 5px;
     box-sizing: border-box;
-    border: 1px solid #ced4da; /* Bordas mais sutis */
-    border-radius: 8px; /* Cantos arredondados nos campos de entrada */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Efeito suave na borda */
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-form input:focus {
-    border-color: #007bff; /* Cor da borda ao focar */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Sombra ao focar */
-    outline: none; /* Remove a borda padrão do foco */
+form input:focus, #searchBar:focus {
+    border-color: #17a2b8; /* Borda em ciano ao focar */
+    box-shadow: 0 0 10px rgba(23, 162, 184, 0.5); /* Efeito de brilho */
+    outline: none;
 }
 
 form button {
-    margin-top: 20px;
-    padding: 16px; /* Aumentado o padding */
+    margin-top: 25px;
+    padding: 16px;
     width: 100%;
-    background-color: #28a745; /* Verde vibrante */
+    background-color: #28a745;
     border: none;
     color: #fff;
-    font-size: 18px; /* Tamanho de fonte maior para os botões */
-    border-radius: 8px; /* Cantos arredondados */
+    font-size: 18px;
+    font-weight: bold; /* Botão mais destacado */
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 form button:hover {
-    background-color: #218838; /* Cor do botão ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    background-color: #218838;
+    transform: translateY(-3px); /* Efeito de elevação */
 }
 
 .link {
@@ -73,63 +74,59 @@ form button:hover {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s; /* Transição suave na cor do link */
+    transition: color 0.3s, transform 0.2s;
 }
 
 .link:hover {
+    color: #0056b3;
     text-decoration: underline;
-    color: #0056b3; /* Cor mais escura ao passar o mouse */
-}
-
-#searchBar {
-    width: 100%;
-    padding: 14px; /* Aumentado o padding */
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ced4da;
-    border-radius: 8px; /* Cantos arredondados */
-    transition: border-color 0.3s; /* Efeito suave na borda */
-}
-
-#searchBar:focus {
-    border-color: #007bff; /* Cor da borda ao focar */
+    transform: scale(1.05); /* Leve efeito ao passar o mouse */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px; /* Espaço acima da tabela */
+    margin-top: 20px;
+    background-color: #f8f9fa; /* Fundo da tabela */
 }
 
 table thead {
-    background-color: #007bff; /* Cor de fundo do cabeçalho */
-    color: #ffffff;
+    background-color: #17a2b8; /* Cabeçalho em ciano */
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Mais moderno */
 }
 
 table th, table td {
-    padding: 14px; /* Aumentado o padding */
+    padding: 16px; /* Mais espaço interno */
     border: 1px solid #dee2e6;
     text-align: center;
+    font-size: 1.1em; /* Fontes maiores */
 }
 
 table img {
-    width: 70px; /* Largura um pouco maior para imagens */
+    width: 70px;
     height: auto;
-    border-radius: 6px; /* Cantos arredondados nas imagens */
+    border-radius: 8px; /* Imagens mais suaves */
+    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+table img:hover {
+    transform: scale(1.1); /* Zoom leve nas imagens */
 }
 
 .action-btn {
     margin: 0 5px;
-    padding: 10px 18px; /* Aumentado o padding */
+    padding: 12px 20px; /* Botões mais destacados */
     border: none;
     cursor: pointer;
-    color: #ffffff;
-    border-radius: 6px; /* Cantos arredondados */
-    transition: transform 0.2s, opacity 0.2s; /* Efeito suave na transformação */
+    color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .edit-btn {
-    background-color: #ffc107; /* Amarelo vibrante */
+    background-color: #ffc107; /* Amarelo mais vivo */
 }
 
 .delete-btn {
@@ -137,6 +134,6 @@ table img {
 }
 
 .edit-btn:hover, .delete-btn:hover {
-    opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    opacity: 0.9;
+    transform: scale(1.1); /* Mais interatividade */
 }
